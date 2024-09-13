@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <title>Document</title>
+    <style>
+        body {
+       
+       margin: 0;
+       padding: 0;
+   }
+   
+   header {
+       padding: 10px;
+       margin: 10px;
+   }
+   
+   .heading {
+       display: flex;
+       justify-content: flex-end;
+       margin-top: -89px;
+       text-indent: 30px;
+       margin-right: 50px;
+   }
+   
+   .image {
+            margin-top: -50px;
+            width: 250px;  
+            height: 150px; 
+            object-fit: cover;
+         }
+   
+   a {
+       font-weight: bold;
+       size: 120px;
+       color: #000;
+       text-decoration: none;
+       margin-left: 15px;
+   }
+   
+   .heading a:hover {
+       color:orange;
+   }
+   
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #e0f7fa;
+            border-radius: 20px;
+           margin-top: 20px;
+        }
+        
+        .block1 {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .block0 {
+            width: 220px;
+            height: 220px;
+            background-color: #bfe0e0;
+            border-radius: 50%;
+            margin-right: 100px;
+            position: relative;
+        }
+        
+        .block0 img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+        }
+        
+        .block0 img:nth-child(1) { top: 10px; left: 50%; transform: translateX(-50%); }
+        .block0 img:nth-child(2) { top: 50%; left: 10px; transform: translateY(-50%); }
+        .block0 img:nth-child(3) { top: 50%; right: 10px; transform: translateY(-50%); }
+        
+        .A {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .circle {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .item {
+            
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            background-color: #8E95F4;
+            border-radius: 50%;
+            color: white;
+            
+            line-height: 1.2;
+        }
+        
+        .item:hover {
+            background-color: rgb(156, 131, 7);
+            color: #000;
+        }
+        
+        .item0 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+        .item1 { top: 25%; left: 90%; transform: translate(-50%, -50%); }
+        .item2 { top: 75%; left: 90%; transform: translate(-50%, -50%); }
+        .item3 { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+        .item4 { top: 75%; left: 10%; transform: translate(-50%, -50%); }
+        .item5 { top: 25%; left: 10%; transform: translate(-50%, -50%); }
+        
+        .center-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background-color: #8E95F4;
+            border-radius: 50%;
+            color: #000;
+            font-size: 14px;
+            line-height: 1.2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .center-item:hover {
+            background-color: rgb(171, 98, 9);
+            color: azure;
+        }
+        
+        .circle1 {
+            width: 100%;
+            max-width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background-color: pink;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .circle1 h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .circle1 p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .circle2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .circle2 ul {
+            margin: 0;
+            padding-left:  25px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .circle2 ul li {
+            margin-bottom: 10px;
+        }
+        
+        .image17 {
+            padding-right: 30px;
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+        
+        .image17 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .A {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .circle {
+                margin: 0 0 20px 0;
+                background-color: #f0f0f0;
+            }
+        }
+        p{
+            font-size: 14px;
+        }
+        footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: left;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+.social-media a:hover {
+  color: #007bff;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 10%;
+    }
+ol.order_list {
+    list-style-type: none; 
+    counter-reset: custom-counter; 
+    padding-left: 0; 
+    line-height: 2.5;
+}
+
+ol.order_list li {
+    position: relative; 
+    padding-left: 40px; 
+    margin-bottom: 10px; 
+}
+
+ol.order_list li::before {
+    content: counter(custom-counter); 
+    counter-increment: custom-counter; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: rgb(238, 13, 226); 
+    color: rgb(6, 6, 6);
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+ol.order_list li:hover{
+    background-color: orange;
+    border-radius: 30px;
+    border: #000;
+}
+.child {
+      margin-right: 50px;
+    }
+    .child1 img, .child2 img {
+        width:550px; 
+        height: 300px; 
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Home1.html"><img src="./logo3.png" alt="logo" class="image"></a>
+        <div class="heading">
+            <a href="home1.html">Home</a>
+            <a href="abote.html">About</a>
+            <a href="ourservices.html">Services</a>
+            <a href="Staffing.html">Staffing</a>
+            <a href="#">Opening</a>
+            <a href="contant.html">Contact</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <h2>STAFFING SOLUTIONS</h2>
+            <h2>WHY DO BUSINESSES NEED STAFFING SOLUTIONS?</h2>
+            <ul>
+                <li>Time and Cost Efficiency</li>
+                <li>Access to a Larger Talent Pool</li>
+                <li>Flexibility</li>
+                <li>Expertise and Compliance</li>
+            </ul>
+        </div>
+        <div class="block0">
+            <img src="./image14.jpg" alt="image14">
+            <img src="./image15.jpg" alt="image15">
+            <img src="./image16.jpg" alt="image16">
+        </div>
+    </div>
+    <div class="A">
+        <div class="circle">
+            <p class="item item0">Training and Development</p>
+            <p class="item item1">Staffing Proposal</p>
+            <p class="item item2">Payroll Management</p>
+            <p class="item item3">Hired Candidates</p>
+            <p class="item item4">Training for Selected</p>
+            <p class="item item5">Screening</p>
+            <p class="center-item">Staffing Services</p>
+        </div>
+        <div class="circle1">
+            <h2>HOW TO APPROACH</h2>
+            <p>Staffing solutions refer to a range of services and strategies designed<br> to help organizations meet their workforce needs. These solutions can include:</p>
+            <div class="circle2">
+                <ul>
+                    <li>Temporary Staffing</li>
+                    <li>Permanent Placement</li>
+                    <li>Contract Staffing</li>
+                    <li>Temp-to-Perm</li>
+                    <li>On-Site Management</li>
+                    <li>Payroll Services</li>
+                </ul>
+                <div class="image17">
+                    <img src="./image17.jpg" alt="image17">
+                </div>
+            </div>
+            <p >Permanent placement solutions are about finding the right talent who not only fit the job but also align with the company's culture and long-term goals.</p>
+            <p> Staffing solutions refer to a range of services and strategies designed<br> to help organizations meet their workforce needs. These solutions can include:
+            </p>
+        </div>
+    </div>
+    <div class="box1">
+       
+        <ol class="order_list">
+            <h2>STAFFING PROCESS</h2>
+            <li>Man Power Requirement</li>
+            <li>Recruitment </li>
+            <li>Selection</li>
+            <li>Orientation and Placement</li>
+            <li>Training and Development</li>
+            <li>Remuneration</li>
+            <li>Performence and Evalution</li>
+            <li>Promotion and Transfer</li>
+        </ol>
+        <div  class="child">
+            <div class="child1">
+                <img src="./image18.jpg" alt="image18">
+            </div>
+            <div class="child2">
+                <img src="./image19.jpg" alt="image19">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>MangosOrange Group aspires to be a fortune 500 company in the coming years.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+              <li>IT Services</li>
+              <li>Cloud Services</li>
+              <li>Training and Skill Development</li>
+              <li>Infrastructure Management</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Staffing</h3>
+            <ul>
+              <li>Deep-Tech AI</li>
+              <li>AI and ML Banking</li>
+              <li>Geographic Information System</li>
+              <li>Business Solutions</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li>Address</li>
+              <li>Phone</li>
+              <li>Email</li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+         </a> 
+         <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+         <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+         </a>
+        </div>
+      </footer>
+      
+</body>
+</html>

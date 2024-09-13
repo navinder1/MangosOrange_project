@@ -1,0 +1,184 @@
+body {
+    background-color: rgb(0, 61, 53);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav > img {
+    height: 80px;
+    width: 160px;
+    margin: 10px 30px;
+  }
+  nav > ul {
+    list-style-type: none;
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .heading{
+    display: flex;
+    gap:20px;
+  }
+ 
+  .heading a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+  
+  nav > ul > a > li {
+    font-weight: bolder;
+    padding: 0px 20px;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+  }
+  
+  nav > ul > li {
+    font-weight: bolder;
+    padding: 0px 20px; /* Existing padding */
+    margin-right: 30px; /* Add margin to the right for spacing */
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav-item.home {
+    margin-right: 50px; /* Space after Home */
+  }
+  
+  .nav-item.about {
+    margin-right: 30px; /* Space after About Us */
+  }
+  
+  nav > ul > li:last-child {
+    margin-right: 0;
+  }
+  
+  .container-1 {
+    background-color: rgb(0, 61, 53);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color:white;
+    margin-top: 10px;
+  }
+  .container-7 {
+    background-color: rgb(0, 61, 53);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  h3 {
+    color: white;
+    text-align: center;
+    padding: 0%;
+  }
+  
+  p {
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  .container-7 > .con7-text > .Apply {
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: bolder;
+    background-color: yellow;
+  }
+  
+  .container-7 > .con7-text > .Apply:hover {
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    color: white;
+    font-size: 21px;
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  footer {
+    height: 400px;
+   
+  }
+  
+  footer > .footer-start {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  footer > .footer-start > .quicklinks > ul > a {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  footer > .footer-end {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .hiring-img {
+    height: 620px;
+  }
+  
+  footer {
+    padding: 40px;
+    background-color: yellow;
+    color:#000;
+  }
+  
+  .footer-container {
+    display: flex;
+    color: black;
+    justify-content: space-around; 
+    align-items: flex-start; 
+  }
+  
+  .footer-column {
+    width: 30%;
+   
+  }
+  .footer-end h3{
+    color: #000;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 0px;
+    color: #000;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 5px;
+    line-height: 1.5;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-end {
+    margin-top: 20px;
+    margin-right: 7px;
+  }
+  
+  .footer-end img {
+    margin-right: 10px;
+  }
